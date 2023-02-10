@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+.assig1{
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #EEE;
+    width: 600px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    position: relative;
+    border-left: #f44336 solid 4px;
+    border-right: #673ab7 solid 4px;
+}
+.assig1::first-letter{
+    color: red;
+    position: absolute;
+}
+.assig1::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right , #f44336 20% ,#2196f3 20% , #2196f3 40% , #4caf50 40% , #4caf50 60% ,#e91e63 60% , #e91e63 80% , #673ab7 80%);
+    height: 4px;
+    width: 100%;
+    top: 0;
+    left: 0px;
+}
+.assig1::after{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to right , #f44336 20% ,#2196f3 20% , #2196f3 40% , #4caf50 40% , #4caf50 60% ,#e91e63 60% , #e91e63 80% , #673ab7 80%);
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    left: 0px;
+}
+.assig2{
+    position: relative;
+    width: 600px;
+    margin: 10px auto;
+}
+input{
+    display: block;
+    margin: 10px auto;
+    background-color: #eee;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    caret-color: red;
+    outline: none;
+}
+.assig2::before{
+    content: "";
+    height: 4px;
+    position: absolute;
+    width: 600px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #f44336 50%, #009688 50%);
+}
